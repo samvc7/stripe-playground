@@ -15,7 +15,7 @@ import { redirect } from "next/navigation"
 export default async function ReturnPage({
   searchParams,
 }: {
-  searchParams: { session_id: string }
+  searchParams: Promise<{ session_id: string }>
 }) {
   const { session_id } = await searchParams
 
