@@ -32,7 +32,7 @@ pnpm install
 
 2. Install dependencies using your preferred package manager (`pnpm install` recommended).
 
-3. Create a `.env.local` file in the root of the project with the following content. You get the keys when signing up at stripe [Stripe Keys](https://docs.stripe.com/keys):
+3. Create a `.env.local` file in the root of the project with the following content. See [Stripe Keys](https://docs.stripe.com/keys) to get necessary stripe keys:
 
 ```bash
 NEXT_PUBLIC_APP_URL=http://localhost:3000
