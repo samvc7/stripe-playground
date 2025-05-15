@@ -20,5 +20,9 @@ export function CheckoutButton({ priceId }: { priceId: string }) {
     }
   }
 
-  return <Button onClick={handleCheckout}>Checkout</Button>
+  return (
+    <Button className="w-full" onClick={handleCheckout}>
+      Purchase
+    </Button>
+  )
 }
