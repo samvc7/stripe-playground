@@ -17,7 +17,7 @@ export default function CheckoutPage() {
   const priceId = searchParams.get("priceId")
 
   if (!priceId) {
-    return <div>Price ID is required</div>
+    throw new Error("Price ID is required")
   }
   const fetchClientSecretByPriceId = async () => {
     const clientSecret = await fetchClientSecret(priceId)
@@ -28,7 +28,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div id="checkout">
+    <div id="checkout" className="mt-6">
       <EmbeddedCheckoutProvider
         stripe={stripePromise}
         options={{ fetchClientSecret: fetchClientSecretByPriceId }}

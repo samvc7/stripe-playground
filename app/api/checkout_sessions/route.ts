@@ -17,7 +17,7 @@ export async function POST(req: Request) {
         },
       ],
       mode: "payment",
-      payment_method_types: ["card"],
+      payment_method_types: ["card", "paypal"],
       success_url: `${origin}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/checkout/cancel`,
     })

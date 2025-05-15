@@ -15,7 +15,7 @@ export async function fetchClientSecret(priceId: string) {
       },
     ],
     mode: "subscription",
-    return_url: `${origin}/return?session_id={CHECKOUT_SESSION_ID}`,
+    return_url: `${origin}/subscriptions/return?session_id={CHECKOUT_SESSION_ID}`,
   })
 
   if (!session.client_secret) {
