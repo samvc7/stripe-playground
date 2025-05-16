@@ -44,7 +44,7 @@ export default async function ReturnPage({
               <CheckCircle className="text-green-600" />
             </div>
             <CardTitle className="text-2xl font-bold">
-              Subscription Activated!
+              <h1>Subscription Activated!</h1>
             </CardTitle>
 
             <CardDescription>

@@ -1,0 +1,2 @@
+export const CARD_SUCCEEDS = "4242 4242 4242 4242"
+export const CARD_DECLINED = "4000 0000 0000 9995"

@@ -18,7 +18,7 @@ export default function CancelPage() {
             <AlertCircle className="text-amber-400" />
           </div>
           <CardTitle className="text-2xl font-bold">
-            Payment Cancelled
+            <h1>Payment Cancelled</h1>
           </CardTitle>
           <CardDescription className="text-sm">
             Your payment was not completed. No charges have been made to your
